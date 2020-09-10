@@ -1,0 +1,31 @@
+
+#brand{
+    width: 350px;
+    margin-top: 50px;
+}
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar{
+    background-image: url("../images/Background1.png")
+}
+.results{
+    font-weight: lighter;
+    color: #4B4B4B;
+    margin-left: 16.6rem;
+    margin-top: 4.5rem;
+}
+.weather{
+    font-size: 45px;
+}
+#cityname{
+    font-size: 80px;
+}
+#description{
+    font-size: 25px;
+}
+span{
+    margin-right: 21px;
+}

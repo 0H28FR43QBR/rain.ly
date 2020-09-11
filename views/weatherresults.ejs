@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aktualna pogoda w <%= cityName %></title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -18,14 +18,17 @@
     </nav>
 
     <div class="results">
-        <p id="cityname">London</p>
-        <p id="description">Description: Clear sky</p>
-        <p class="weather"><span><img src="images/feelliketemp.png" alt=""></span>Feel like temperature: 12</p>
-        <p class="weather"><span><img src="images/pressure.png" alt=""></span>Pressure: 1013</p>
-        <p class="weather"><span><img src="images/humidity.png" alt=""></span>Humidity: 43</p>
-        <p class="weather"><span><img src="images/windspeed.png" alt=""></span>Wind speed: 12</p>
-        <p class="weather"><span><img src="images/winddirection.png" alt=""></span>Wind direction: 12</p>
-        <p class="weather"><span><img src="images/visibility.png" alt=""></span>Visibility: 12</p>
+        <p id="cityname"><span id="weathericon"><img src=<%= icon %> alt=""></span><%= cityName %></p>
+        <p id="description">Opis pogody: <%= description %></p>
+        <div class="weather-icons">
+            <p class="weather"><span><img src="images/temperature.png" alt=""></span>Temperatura: <%= temperature %>°C</p>
+            <p class="weather"><span><img src="images/pressure.png" alt=""></span>Ciśnienie: <%=pressure %> hPa</p>
+            <p class="weather"><span><img src="images/humidity.png" alt=""></span>Wilgotność powietrza: <%= humidity %>%</p>
+            <p class="weather"><span><img src="images/windspeed.png" alt=""></span>Prędkość wiatru: <%= windspeed %> m/s</p>
+            <p class="weather"><span><img src="images/winddirection.png" alt=""></span>Kierunek wiatru: <%= winddirection %>°</p>
+            <p class="weather"><span><img src="images/visibility.png" alt=""></span>Widoczność: <%= visibility %>m</p>
+        </div>
+        
     </div>
 </body>
 </html>
